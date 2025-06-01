@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Constrain maximum width and prevent horizontal overflow */
+body {
+  @apply min-h-screen w-full overflow-x-hidden;
+}
+
+/* Optional: Set a max-width container for your content */
+.main-container {
+  @apply w-full max-w-[1920px] mx-auto;
+}

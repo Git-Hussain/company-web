@@ -1,0 +1,79 @@
+/* Grey gradient background */
+.greyGradient {
+  background: linear-gradient(
+    135deg,
+    #5a5a5a 0%,
+    #696969 25%,
+    #909090 50%,
+    #b5b5b5 75%,
+    #cccccc 100%
+  );
+}
+
+/* Header animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headerAnimation {
+  color: #ffffff; /* Dark grey */
+  animation: fadeInDown 1s ease-out both;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Service card animation */
+.serviceCard {
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(0);
+  border: 1px solid rgba(237, 242, 247, 0.8);
+}
+
+.serviceCard:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Icon animation */
+.iconHover {
+  transition: all 1.5s ease;
+}
+
+.serviceCard:hover .iconHover {
+  transform: scale(1.5) rotate(370deg);
+  color: #4c51bf; /* Darker indigo */
+}
+
+.des{
+    transition: all 0.9s ease;
+}
+.serviceCard:hover .des{
+    font-size: 18px;
+}
+
+.serviceCard {
+  opacity: 0; /* Start with invisible cards */
+  animation: fadeInDown 0.5s ease-out forwards; /* Use the same animation as header */
+}
+/* Staggered card animations */
+.serviceCard:nth-child(1) { animation-delay: 0.5s; }
+.serviceCard:nth-child(2) { animation-delay: 1s; }
+.serviceCard:nth-child(3) { animation-delay: 1.5s; }
+.serviceCard:nth-child(4) { animation-delay: 2s; }
+.serviceCard:nth-child(5) { animation-delay: 2.5s; }
+.serviceCard:nth-child(6) { animation-delay: 3s; }
+.serviceCard:nth-child(7) { animation-delay: 3.5s; }
+.serviceCard:nth-child(8) { animation-delay: 4s; }
+.serviceCard:nth-child(9) { animation-delay: 4.5s; }
+.serviceCard:nth-child(10) { animation-delay: 5s; }
+.serviceCard:nth-child(11) { animation-delay: 6s; }
+.serviceCard:nth-child(12) { animation-delay: 6.5s; }
